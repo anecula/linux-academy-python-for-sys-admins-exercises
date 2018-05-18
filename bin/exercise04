@@ -1,0 +1,17 @@
+#!/bin/python
+
+# Creating and using functions https://linuxacademy.com/cp/exercises/view/id/649/module/158
+
+def printmessage(message,count):
+
+    print("Repeating '%s' text for %s times" % (message,count))
+    for i in range(count):
+        print (message)
+
+message = raw_input("Message:")
+try:
+    count = int(input("Times to repeat (default 1):"))
+except:
+    count = 1
+
+printmessage(message=message,count=count)
